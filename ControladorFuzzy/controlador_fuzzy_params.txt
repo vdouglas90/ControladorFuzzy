@@ -1,0 +1,32 @@
+2 1 15
+erro -30.0 30.0 5
+GN trimf -2030.0 -20.0 -10.0
+FN trimf -20.0 -10.0 0.0
+Z trimf -10.0 0.0 10.0
+FP trimf 0.0 10.0 20.0
+GP trimf 10.0 20.0 1970.0
+derivada -5.0 5.0 3
+N trimf -5.0 -5.0 -1.0
+Z trimf -4.0 0.0 4.0
+P trimf 1.0 5.0 5.0
+tensao -0.05 0.05 5
+FoN trimf -3.08 -0.03347 -0.01667
+FrN trimf -0.03333 -0.01667 0.0
+Z trimf -0.01667 0.0 0.01667
+FrP trimf 0.0 0.01667 0.03333
+FoP trimf 0.01667 0.03167 3.0
+GN AND N FoN
+GN AND Z FoN
+GN AND P FrP
+FN AND N FoN
+FN AND Z FrN
+FN AND P FrP
+Z AND N FoN
+Z AND Z Z
+Z AND P FoP
+FP AND N FrN
+FP AND Z FrP
+FP AND P FoP
+GP AND N FrN
+GP AND Z FoP
+GP AND P FoP
